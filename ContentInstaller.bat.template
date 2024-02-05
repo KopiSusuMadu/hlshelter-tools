@@ -1,3 +1,5 @@
+@echo off
+
 set HLDIR="E:/.steam/steamapps/common/Half-Life"
 set TOOLSDIR=%~dp0
 

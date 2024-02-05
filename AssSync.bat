@@ -1,3 +1,5 @@
+@echo off
+
 dotnet "./bin/AssetSynchronizer.dll"^
 	--assets-directory "../hlshelter-assets"^
 	--mod-directory "../hlshelter-mod/hlshelter"^
