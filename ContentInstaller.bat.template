@@ -1,0 +1,8 @@
+set HLDIR="E:/.steam/steamapps/common/Half-Life"
+set TOOLSDIR=%~dp0
+
+cd %HLDIR%
+dotnet "%TOOLSDIR%/bin/ContentInstaller.dll"^
+	--mod-directory "%HLDIR%/hlshelter"
+
+pause

@@ -1,0 +1,22 @@
+set STUDIOMDL="D:/Projects/CPP/hlshelter-assets/tools/studiomdl.exe"
+set SPRGEN="D:/Projects/CPP/hlshelter-assets/tools/sprgen.exe"
+set TOOLSDIR=%~dp0
+
+echo ================================
+echo.
+echo BUILD MODELS
+echo.
+echo ================================
+cd "../hlshelter-assets/scripts/"
+cmd /c compile_all.bat > "%TOOLSDIR%/mdl.log"
+cmd /c package_all.bat >> "%TOOLSDIR%/mdl.log"
+
+echo ================================
+echo.
+echo BUILD SPRITES
+echo.
+echo ================================
+cd "../spritesrc/"
+cmd /c compile_all.bat > "%TOOLSDIR%/spr.log"
+
+pause
